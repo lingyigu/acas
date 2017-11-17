@@ -1,6 +1,8 @@
 # ACAS Progress Report
 ### Project Description
-The overall goal of this project is to gain more insights on the main reasons for midair collisions.  As the project owner request, we focus on analyzing the narratives of each incident and aim to find the main reason that causes the near midair collision. After initial data analysis, we find that the human error is the most prominent factor of collisions. Furthermore, we would like to see how the relative position of the aircraft (relative distance to the airport) and altitude of the aircraft relate to these human errors. For example, a air collision happened near the aircraft may because of a wrong decision made by the traffic alert and collision avoidance crew, while a collision happened far from the aircraft may because of pilot’s operation error. We will cluster based on these human errors and quantified distances to give an intuitive explanation of the human causes of mid air collisions. 
+The overall goal of this project is to gain more insights on the main reasons for midair collisions.  As the project owner request, we focus on analyzing the narratives of each incident and aim to find the main reason that causes the near midair collision. After initial data analysis, we find that the human error is the most prominent factor of collisions. 
+
+Furthermore, we would like to see how the relative position of the aircraft (relative distance to the airport) and altitude of the aircraft relate to these human errors. For example, a air collision happened near the aircraft may because of a wrong decision made by the traffic alert and collision avoidance crew, while a collision happened far from the aircraft may because of pilot’s operation error. We will cluster based on these human errors and quantified distances to give an intuitive explanation of the human causes of mid air collisions. 
 
 ### Data Retrieval (Close to be completed)
 As we work more on retrieving data, we decide to use the air collision data published by NASA (https://akama.arc.nasa.gov/ASRSDBOnline/QueryWizard_Filter.aspx). We first select all the airborne collision data in Massachusetts for test. We plan to expand the data collection to other states, or to the entire United State. Then we specify different parameters regarding the environment, aircraft type, etc. After we get the data, we generate corresponding CSV files from this website. 
@@ -8,6 +10,7 @@ As we work more on retrieving data, we decide to use the air collision data publ
 ### Data Cleaning & Analysis
 We first clean the data by removing all the prefixes, suffixes, and empty entries to get the useful information. 
 As the client request, we choose to primarily analyze the report of each incident, which is the short narratives from the pilots that explain the details of the incidents.  We first parse each report and remove some insignificant words like “in”, “one”, etc. Then we change all the words to the root forms by stemming them, so even if the same word is in different term, the algorithm will still categorize them together.
+
 We also have performed the Principle Component Analysis on the narrative of each event to get the most important terms and phrases that mentioned across all the descriptions. Here are the example of some terms we found:
 
 ```
