@@ -1,4 +1,6 @@
 # ACAS Progress Report
+
+Team: [Haoyu(Jerry) Wu](https://github.com/wuhaoyujerry), [Wei Wei](https://github.com/wei0496), [Lingyi Gu](https://github.com/lingyigu)
 ### Project Description
 The overall goal of this project is to gain more insights on the main reasons for midair collisions.  As the project owner request, we focus on analyzing the narratives of each incident and aim to find the main reason that causes the near midair collision. After initial data analysis, we find that the human error is the most prominent factor of collisions. 
 
