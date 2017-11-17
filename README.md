@@ -10,7 +10,28 @@ We first clean the data by removing all the prefixes, suffixes, and empty entrie
 As the client request, we choose to primarily analyze the report of each incident, which is the short narratives from the pilots that explain the details of the incidents.  We first parse each report and remove some insignificant words like “in”, “one”, etc. Then we change all the words to the root forms by stemming them, so even if the same word is in different term, the algorithm will still categorize them together.
 We also have performed the Principle Component Analysis on the narrative of each event to get the most important terms and phrases that mentioned across all the descriptions. Here are the example of some terms we found:
 
-![](Screen%20Shot%202017-11-17%20at%203.03.44%20PM.png)
+```
+[['acr', 'error', 'standard', 'system', 'separ'],
+ ['ctlr', 'zbw', 'experienc', 'operror', 'at'],
+ ['tcasii', 'to', 'alt', 'acr', 'ra'],
+ ['rwi', 'on', 'acr', 'apch', 'experienc'],
+ ['rwi', 'on', 'acft', 'of', 'apch'],
+ ['class', 'in', 'airspac', 'tcasii', 'separ'],
+ ['plt', 'at', 'pattern', 'pa28', 'conflict'],
+ ['ft', 'crew', 'at', 'conflict', 'alt'],
+ ['acft', 'close', 'prox', 'at', 'sma'],
+ ['anoth', 'airspac', 'acft', 'same', 'acr'],
+ ['acft', 'through', 'sy', 'crew', 'ltss'],
+ ['an', 'lgt', 'ha', 'crew', 'flt'],
+ ['tfc', 'action', 'conflict', 'evas', 'acft'],
+ ['ft', 'apch', 'wa', 'by', 'plt'],
+ ['action', 'plt', 'evas', 'bed', 'pa28'],
+ ['to', 'atc', 'crew', 'an', 'ft'],
+ ['of', 'wa', 'that', 'acr', 'rwi'],
+ ['an', 'wa', 'tcasii', 'gar', 'acft'],
+ ['lgt', 'sma', 'ctlr', 'gar', 'pattern'],
+ ['dep', 'clb', 'action', 'acr', 'lgt']]
+```
 
 ### Methodology
 One of the simple results we can show, giving that all reports are aircraft collisions which actually happened, is to create a bar graph of the frequency of each parameter which leads to the collision. This gives a simple intuition but does not explain the interrelations. So to explore further, we will construct a distance matrix and decide between distance metrics (Euclidean Distance, Manhattan Distance, etc), to find the similarity between our different parameters in each report. After that, we will utilize clustering to find similar reports in each cluster and analysis based the size and combination of terms in each cluster to reach our conclusion. In order to visualize the cluster results, we will represent every report as a data point in a 2d graph, and extract the frequent combination of features of each cluster, which will give an intuition of each factor combined together may likely to lead to frequent air collisions. 
