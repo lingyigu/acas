@@ -16,7 +16,7 @@ We also have performed the Principle Component Analysis on the narrative of each
 One of the simple results we can show, giving that all reports are aircraft collisions which actually happened, is to create a bar graph of the frequency of each parameter which leads to the collision. This gives a simple intuition but does not explain the interrelations. So to explore further, we will construct a distance matrix and decide between distance metrics (Euclidean Distance, Manhattan Distance, etc), to find the similarity between our different parameters in each report. After that, we will utilize clustering to find similar reports in each cluster and analysis based the size and combination of terms in each cluster to reach our conclusion. In order to visualize the cluster results, we will represent every report as a data point in a 2d graph, and extract the frequent combination of features of each cluster, which will give an intuition of each factor combined together may likely to lead to frequent air collisions. 
 
 ### Timeline
-11/17 Initial Report Complete & Utilize PCA to extract the descriptions of incident report SV
-11/27 Use multiple distance functions  to measure the similarity between different parameters extracted by PCA from the narratives or data fields already existed in the report (environment conditions, aircraft type, etc). After that, cluster based on the similarity and extract the frequent combinations of factors which lead to “similar” aircraft collisions.
-12/04 Visualize the graph (more detail in the Results section), interpret the graph and reach our final conclusions.
-12/13 Poster Ready and all code & reports submitted.
+* **11/17** Initial Report Complete & Utilize PCA to extract the descriptions of incident report SV
+* **11/27** Use multiple distance functions  to measure the similarity between different parameters extracted by PCA from the narratives or data fields already existed in the report (environment conditions, aircraft type, etc). After that, cluster based on the similarity and extract the frequent combinations of factors which lead to “similar” aircraft collisions.
+* **12/04** Visualize the graph (more detail in the Results section), interpret the graph and reach our final conclusions.
+* **12/13** Poster Ready and all code & reports submitted.
