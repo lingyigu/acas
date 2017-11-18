@@ -40,7 +40,7 @@ We can observe that the cause of the collision is most likely to be caused by hu
 ### Methodology
 We will cluster each report based on the quantified values, relative distance and altitude, to find similar reports in each cluster and analyze based on the size and the assigned human error in each cluster to reach our conclusion.
 
-In order to visualize the cluster results, we will represent each report as a data point in a 2D graph, and extract the human errors causing the collision of each cluster, which will not only give an intuition of the interrelation of the human factor and quantified distances, but also show how these factors combined together may lead to frequent air collisions. 
+In order to visualize the cluster results, we will represent each report as a data point in a 2D graph and let relative distance & altitude being the x,y value of the axis. We will extract the person(pilot, crew, resolution advisory, etc) and his errors causing the collision of each cluster, which will not only give an intuition of the interrelation of the human factor and quantified distances, but also show how these factors combined together may lead to frequent air collisions. 
 
 ### Timeline
 * **11/17** Initial report complete & Utilize PCA to extract the descriptions of incident report
