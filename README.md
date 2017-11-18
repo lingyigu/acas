@@ -16,27 +16,24 @@ As the client request, we choose to primarily analyze the report of each inciden
 We also have performed the Principle Component Analysis on the narrative of each event to get the most important terms and phrases that mentioned across all the descriptions. Here are the example of some terms we found:
 
 ```
-[['acr', 'error', 'standard', 'system', 'separ'],
- ['ctlr', 'zbw', 'experienc', 'operror', 'at'],
- ['tcasii', 'to', 'alt', 'acr', 'ra'],
- ['rwi', 'on', 'acr', 'apch', 'experienc'],
- ['rwi', 'on', 'acft', 'of', 'apch'],
- ['class', 'in', 'airspac', 'tcasii', 'separ'],
- ['plt', 'at', 'pattern', 'pa28', 'conflict'],
- ['ft', 'crew', 'at', 'conflict', 'alt'],
- ['acft', 'close', 'prox', 'at', 'sma'],
- ['anoth', 'airspac', 'acft', 'same', 'acr'],
- ['acft', 'through', 'sy', 'crew', 'ltss'],
- ['an', 'lgt', 'ha', 'crew', 'flt'],
- ['tfc', 'action', 'conflict', 'evas', 'acft'],
- ['ft', 'apch', 'wa', 'by', 'plt'],
- ['action', 'plt', 'evas', 'bed', 'pa28'],
- ['to', 'atc', 'crew', 'an', 'ft'],
- ['of', 'wa', 'that', 'acr', 'rwi'],
- ['an', 'wa', 'tcasii', 'gar', 'acft'],
- ['lgt', 'sma', 'ctlr', 'gar', 'pattern'],
- ['dep', 'clb', 'action', 'acr', 'lgt']]
+
+[['acr', 'error', 'standard', 'system', 'separ', 'between', 'ltss', 'sy'],
+ ['ctlr', 'zbw', 'experienc', 'operror', 'at', 'separ', 'standard', 'ft'],
+ ['tcasii', 'to', 'alt', 'acr', 'ra', 'ltss', 'assign', 'dscnt'],
+ ['rwi', 'on', 'acr', 'apch', 'experienc', 'ltss', 'operror', 'error'],
+ ['rwi', 'on', 'acft', 'of', 'apch', 'to', 'separ', 'standard'],
+ ['class', 'in', 'airspac', 'tcasii', 'separ', 'ra', 'at', 'system'],
+ ['plt', 'at', 'pa28', 'pattern', 'conflict', 'same', 'ltss', 'bed'],
+ ['ft', 'crew', 'alt', 'at', 'conflict', 'dep', 'through', 'rwi'],
+ ['acft', 'close', 'prox', 'at', 'ha', 'sma', 'tcasii', 'ft'],
+ ['acft', 'alt', 'anoth', 'same', 'crew', 'at', 'class', 'airspac']]
 ```
+Full forms of the above abbreviations:
+aircaft, error, standard, system, separation, between, Less Than Standard Separation
+control, boston air route traffic control center, experience, operator, at, separation, standard, feet
+Traffic Alert and Collision Avoidance, to, alert, aircaft, Resolution Advisory, Less Than Standard Separation, assign, descdent
+runways, on, aircraft, approach, experience, Less Than Standard Separation, operator, error
+Resolution Advisory, Traffic Alert and Collision Avoidance, report, crew, aircraft, approach runway, control
 
 ### Methodology
 We will cluster each report based on the quantified values, relative distance and altitude, to find similar reports in each cluster and analyze based on the size and the assigned human error in each cluster to reach our conclusion.
