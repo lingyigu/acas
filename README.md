@@ -28,12 +28,12 @@ We also have performed the Principle Component Analysis on the narrative of each
  ['acft', 'close', 'prox', 'at', 'ha', 'sma', 'tcasii', 'ft'],
  ['acft', 'alt', 'anoth', 'same', 'crew', 'at', 'class', 'airspac']]
 ```
-Full forms of the above abbreviations:
-aircaft, error, standard, system, separation, between, Less Than Standard Separation
-control, boston air route traffic control center, experience, operator, at, separation, standard, feet
-Traffic Alert and Collision Avoidance, to, alert, aircaft, Resolution Advisory, Less Than Standard Separation, assign, descdent
-runways, on, aircraft, approach, experience, Less Than Standard Separation, operator, error
-Resolution Advisory, Traffic Alert and Collision Avoidance, report, crew, aircraft, approach runway, control
+Full forms of the above abbreviations:<br>
+aircaft, error, standard, system, separation, between, Less Than Standard Separation<br>
+control, boston air route traffic control center, experience, operator, at, separation, standard, feet<br>
+Traffic Alert and Collision Avoidance, to, alert, aircaft, Resolution Advisory, Less Than Standard Separation, assign, descdent<br>
+runways, on, aircraft, approach, experience, Less Than Standard Separation, operator, error<br>
+Resolution Advisory, Traffic Alert and Collision Avoidance, report, crew, aircraft, approach runway, control<br>
 
 ### Methodology
 We will cluster each report based on the quantified values, relative distance and altitude, to find similar reports in each cluster and analyze based on the size and the assigned human error in each cluster to reach our conclusion.
