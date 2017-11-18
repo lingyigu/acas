@@ -35,6 +35,8 @@ Traffic Alert and Collision Avoidance, to, alert, aircaft, Resolution Advisory, 
 runways, on, aircraft, approach, experience, Less Than Standard Separation, operator, error<br>
 Resolution Advisory, Traffic Alert and Collision Avoidance, report, crew, aircraft, approach runway, control<br>
 
+We can observe that the cause of the collision is most likely to be caused by human (pilot, crew, traffic control center, resolution advisory) and later we will analyze further into how different parameters may affect their decisions and cause the collision. 
+
 ### Methodology
 We will cluster each report based on the quantified values, relative distance and altitude, to find similar reports in each cluster and analyze based on the size and the assigned human error in each cluster to reach our conclusion.
 
