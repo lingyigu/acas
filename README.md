@@ -22,6 +22,7 @@ As we work more on retrieving data, we decide to use the air collision data publ
 2. **Stop words**: remove common English words. (E.g. We, are)
 3. **Preliminary analysis**: Before analyzing the narratives, we want to learn what factors contribute to collisions the most. From the graph on the right, we can see that human error is the most prominent reason for midair collisions. However, we still need to analyze the narratives to see if the finding corresponds to this heat map.
 
+![heat-map](https://github.com/lingyigu/acas/blob/master/images/heat-map.png)
 
 ## Dimensionality Reduction & Latent Semantic Analysis(LSA)
 We first clean the data by removing all the prefixes, suffixes, and empty entries to get the useful information. 
@@ -51,8 +52,26 @@ Resolution Advisory, Traffic Alert and Collision Avoidance, report, crew, aircra
 
 We can observe that the cause of the collision is most likely to be caused by human (pilot, crew, traffic control center, resolution advisory) and later we will analyze further into how different parameters may affect their decisions and cause the collision. 
 
+#### Determining n_components
+![n-components](https://github.com/lingyigu/acas/blob/master/images/singular-value.png)
+
 ## Clustering
-After performing latent semantic analysis and singular value decomposition, we clustered the incidents by three metrics. We confirmed that human error is the most common reason for collision. Since K-means ++ has the highest Silhouette Score, we chose it for further analysis. 
+After performing latent semantic analysis and singular value decomposition, we clustered the incidents by three metrics. We confirmed that human error is the most common reason for collision. Since K-means ++ has the highest Silhouette Score, we chose it for further analysis.
+
+#### Determining the number of cluster k
+![errors](https://github.com/lingyigu/acas/blob/master/images/evaluate-cluster-1.png)
+
+![silhouette-score](https://github.com/lingyigu/acas/blob/master/images/evaluate-cluster-2.jpeg)
+
+#### K-means++ removing outliers
+![k-means-ouliers](https://github.com/lingyigu/acas/blob/master/images/k-means-outliers-included.png)
+
+![k-means++](https://github.com/lingyigu/acas/blob/master/images/k-means%2B%2B.png)
+
+#### K-means++ vs. Hierarchical vs. GMM
+![hierarchical](https://github.com/lingyigu/acas/blob/master/images/hierarchical.png)
+
+![gmm](https://github.com/lingyigu/acas/blob/master/images/gmm.png)
 
 ## Heap map of clustering results
 Clustering gave us an intuition of how different combination of factors at each different altitude, which may lead to a collision. By plotting a heat map for each cluster, we can observe the number of occurrence of these words and determining the important ones.  
