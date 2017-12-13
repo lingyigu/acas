@@ -79,7 +79,7 @@ Take the above heat map as an example, atc (Air Traffic Control), hdg (Heading M
 Here are the conclusions we have drawn by examining the clustering results and experimental data. To answer our two questions: What are the major reasons for midair and near midair collisions? How are the altitude and the relative position of the aircraft related to these major reasons? 
 1. The lower the altitude, collision is more likely to occur because aircrafts are taking off or landing.
 2. Among low altitude collision (<20,000) during climbing and descending, the parameters which may cause the collision are: downwind, tower, true airspeed, aircraft turning, heading mode, traffic control, visual and collision happens frequently among single-engine piston.
-3. Among high latitude collision (20,000 ~ 50,000), collisions are likely happen during sector (a portion of an itinerary) or climb, and associates more with the arrangement of the traffic control center and airport. Visual and radar may also play an important role here.
+3. Among high altitude collision (20,000 ~ 50,000), collisions are likely happen during sector (a portion of an itinerary) or climb, and associates more with the arrangement of the traffic control center and airport. Visual and radar may also play an important role here.
 
 ## 6. Future Work
 1. Outlier detection improvement
