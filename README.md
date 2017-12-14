@@ -87,8 +87,6 @@ Clustering gave us an intuition of how different combination of factors at each 
 
 ![cluster-heat-map-6](https://github.com/lingyigu/acas/blob/master/images/cluster-heat-map-6.png)
 
-Take the above heat map as an example, atc (Air Traffic Control), hdg (Heading Mode: the autopilot keeps the nose of the airplane pointed at the magnetic heading bug), degree of turning and also visual may be important factors in causing the collision of altitude in range (0-2,0000)
-
 ###### Labels vs. Altitude (A darker color indicates that the term has more occurrences in the report)
 
 Take the above heat map as an example, atc (Air Traffic Control), hdg (Heading Mode: the autopilot keeps the nose of the airplane pointed at the magnetic heading bug), degree of turning and also visual may be important factors in causing the collision of altitude in range (0-2,0000).
