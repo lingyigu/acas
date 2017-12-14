@@ -36,7 +36,7 @@ By looking at the data at first glance, there are many factors can cause the mid
 ![heat-map-1](https://github.com/lingyigu/acas/blob/master/images/heat-map-1.png)
 
 ###### Figure 2. Human factors excluded
-![heat-map-2](https://github.com/lingyigu/acas/blob/master/images/heat-map-1.png)
+![heat-map-2](https://github.com/lingyigu/acas/blob/master/images/heat-map-2.png)
 
 ###### Primary problems vs. Altitude (A darker color indicates that more incidents are reported)
 
@@ -44,7 +44,7 @@ From the graph above, we can see that **human factors** seem to be a dominant re
 
 ## 3. Approaches
 The following graph shows an overview of our approach.
-![algorithm-overview](https://github.com/lingyigu/acas/blob/master/images/heat-map-1.png)
+![algorithm-overview](https://github.com/lingyigu/acas/blob/master/images/algorithm-overview.png)
 
 ### 3.1 Latent Semantic Analysis (with PCA)
 We utilized PCA to extract the feature space from the narratives of the incident report and find the most significant mentioned terms like “visual.” We also use SVD to compress the matrix to a low dimension and normalize the data. After performing PCA and SVD, we scale the altitude and relevant distance up because we want to cluster based on these two features, but we also take the terms into account.
